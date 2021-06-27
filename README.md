@@ -1,27 +1,16 @@
-# React, Redux, Firebase Starter
+# Companies and Employees List
 
-Project includes:
+## Project uses:
+- React: For the framework
 - Redux: For state management
-- Redux Thunk: Middleware for asynchronous actions.
-- Redux Logger: To Log dispatch requests
-- Firebase: To use as backend service
+- Firebase/Firestore: To use as backend service and database
 - React Router: To manage routing
+- Material UI - For the GUI
 
-After cloning the project, `cd` into the directory and run.
-``` 
-npm i
-```
+## Project Highlights:
 
-And to run the project 
-```
-npm start
-```
-
-## Deploying
-To push the code to your own Github Repository you need to change the origin of the repo.
-```
-git remote set-url origin your-url.com
-```
-This will change the remote origin to your own repo and then you can push the code.
-
-You can use `Netlify` to deploy it afterwards.
+- **Realtime updates** - uses firestore docSnapShots to update the content in realtime
+- **Material UI** - uses a popular UI library to showcase information with style and modern design
+- **Minimal number of states** - uses only 4 redux states: 2 for updating the companies and employees list, and another 2 for displaying success or error messages
+- **Modular Code** - the react side of things is broken down into multiple components for each significant part of the UI like the add company form, add employee form, company card, employee card, list of companies, company overview, success alert, and error alert. API calls in firebase is also separated with the redux states for better reviewing of the code
+- **Form Validation** - checks whether the field is empty or invalid and displays and error alert when save button is clicked else displays a success alert when no error is found
