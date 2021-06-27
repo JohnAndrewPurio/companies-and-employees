@@ -1,6 +1,7 @@
 import { store } from '../redux/store'
 import '../firebaseConfig'
-import firebase from 'firebase'
+import firebase from 'firebase/app'
+import 'firebase/firestore'
 import { initCompaniesList, initEmployeesList } from '../redux/actions'
 
 const firestoreDB = firebase.firestore()
